@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LML | Luxus Matcha Lieferservice</title>
+    <style>
+        :root {
+            --matcha-green: #5d7c3d;
+            --dark-sage: #2f3e1e;
+            --cream: #f9f7f2;
+            --gold: #c5a059;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: var(--cream);
+            color: var(--dark-sage);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
+            border-top: 1px solid white;
+            padding-top: 10px;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 100px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: #f1ede4;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .image-box {
+            flex: 1;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--matcha-green);
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-sage);
+            color: var(--cream);
+            text-align: center;
+            padding: 50px 0;
+            font-size: 0.9rem;
+        }
+
+        .gold-accent {
+            color: var(--gold);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LML</h1>
+        <p>Luxus Matcha Lieferservice</p>
+    </header>
+
+    <section class="section">
+        <div class="text-box">
+            <h2>Die Perfektion Japans</h2>
+            <p>Bei LML liefern wir nicht einfach nur Tee. Wir bringen die Ruhe und Ästhetik der japanischen Teezeremonie direkt zu Ihnen nach Hause oder ins Büro. Unser Matcha wird in Uji, Kyoto, von Hand geerntet und steinvermahlen.</p>
+            <p class="gold-accent">Ceremonial Grade – Ohne Kompromisse.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&q=80&w=800');"></div>
+    </section>
+
+    <section class="section">
+        <div class="text-box">
+            <h2>Express-Eleganz</h2>
+            <p>In ausgewählten Stadtteilen liefern wir innerhalb von 30 Minuten. Jede Bestellung wird in unseren spezialisierten Thermos-Vasen transportiert, um die perfekte Temperatur von exakt 80°C und die ideale Schaumkrone zu garantieren.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://images.unsplash.com/photo-1531315630201-bb15fbebda65?auto=format&fit=crop&q=80&w=800');"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LML - Luxus Matcha Lieferservice</p>
+        <p>Ein Erlebnis für die Sinne. Täglich von 08:00 bis 20:00 Uhr.</p>
+    </footer>
+
+</body>
+</html>
 
